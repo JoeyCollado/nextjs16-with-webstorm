@@ -1,0 +1,1 @@
+route groups (route) = allow us to create directory/route without affecting the url
