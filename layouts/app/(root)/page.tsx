@@ -2,6 +2,7 @@ import React from 'react'
 import Hello from "@/components/hello";
 
 const Page = () => {
+    
     console.log("I am a server component")
     return (
         <main>
