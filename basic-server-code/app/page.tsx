@@ -1,9 +1,11 @@
 import React from 'react'
 
-const page = () => {
+const page = async () => {
+    const response = await fetch("http://localhost:3000/api/books");
+    const books = await response.json();
   return (
     <div>
-      basic server code from backend
+      <code>{JSON.stringify(books, null, 2)}</code>
     </div>
   )
 }
