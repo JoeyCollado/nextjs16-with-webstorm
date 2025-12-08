@@ -1,10 +1,15 @@
-'use client';
+'use client'; //used if server component needs functionality
 import React from 'react'
+import Image from 'next/image';
 
 const ExploreBtn = () => {
   return (
-    <button onClick={() => console.log('Click')}>Explore Button</button>
+    <button type='button' id='explore-btn' className='mt-7 mx-auto' onClick={() => console.log('Click')}>
+        <a href='#events'>Explore Events</a>
+        <Image src="/icons/arrow-down.svg" alt="arrow-down" width={24} height={24}/>
+    </button>
   )
 }
+
 
 export default ExploreBtn
