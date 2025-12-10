@@ -3,8 +3,12 @@ import Link from 'next/link'
 import React from 'react'
 
 interface Props {
-    title: string,
-    image: string
+    title: string;
+    image: string;
+    slug: string;
+    location: string;
+    date: string;
+    time: string;
 }
 
 const EventCard = ({title, image} : Props) => {
